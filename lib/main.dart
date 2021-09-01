@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery/constants.dart';
 import 'package:food_delivery/Screens/get_started.dart';
 
 void main() {
@@ -12,10 +11,21 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       //debugShowCheckedModeBanner: false,
       title: 'Get Started',
-      theme: ThemeData(
-        primaryColor: kPrimaryColor,
-        scaffoldBackgroundColor: Colors.black,
-        fontFamily: 'Quicksand',
+      theme: ThemeData().copyWith(
+        textTheme: TextTheme(
+          bodyText1: TextStyle(
+            fontSize: 12.0,
+            color: Colors.white,
+            fontFamily: 'Quicksand',
+          ),
+          headline1: TextStyle(
+            fontSize: 20.0,
+            color: Colors.white,
+            fontWeight: FontWeight.w900,
+            fontFamily: 'Quicksand',
+          ),
+        ),
+        scaffoldBackgroundColor: Colors.blueGrey,
       ),
       home: WelcomeScreen(),
     );

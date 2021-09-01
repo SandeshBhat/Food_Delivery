@@ -43,13 +43,17 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             ),
           ),
           SizedBox(height: 20),
-          Text(
-            "Lorem ipsum dolor sit amet, consectetur \n adipiscing elit,Fusce ac ",
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 15.0,
-            ),
+          Column(
+            children: [
+              Text(
+                "Lorem ipsum dolor sit amet, consectetur \n adipiscing elit,Fusce ac ",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 15.0,
+                ),
+              ),
+            ],
           ),
           SizedBox(height: 70),
           Container(
